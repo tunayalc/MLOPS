@@ -1,0 +1,19 @@
+model:
+  class: huggingface_pipeline
+  model_name: sshleifer/tiny-gpt2
+  device: cpu
+  max_new_tokens: 64
+  temperature: 0.8
+  top_k: 50
+run:
+  report_dir: garak_reports
+  n: 10
+plugins:
+  probes:
+    - promptinject
+    - promptinject_truncate
+  detectors:
+    - entropy
+    - repetition
+metadata:
+  description: "Garak ile tiny GPT-2 için hızlı ML güvenlik (prompt inj. vb) denemesi"

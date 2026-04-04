@@ -1,0 +1,7 @@
+{
+  "created_at": "2025-11-20T13:02:49.936960+00:00",
+  "dataset_hash": "20001d1c7541f553453711ba1c7e7923720305c390ad3fb6d641fefd477dd85e",
+  "row_count": 395,
+  "column_count": 33,
+  "source": "https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student-mat.csv"
+}

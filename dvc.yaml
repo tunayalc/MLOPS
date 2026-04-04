@@ -1,0 +1,15 @@
+stages:
+  train:
+    cmd: python train_pipeline.py --use-mlflow-sqlite
+    deps:
+      - experiment_store.py
+      - train_pipeline.py
+      - regression_reporting.py
+      - retrain_pipeline.py
+      - pipeline_utils.py
+      - mlsecops_guardrails.py
+    outs:
+      - mlruns
+      - experiments.db
+      - experiments.mlflow.db
+      - .data/student-mat.csv

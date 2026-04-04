@@ -1,0 +1,47 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train_pipeline.py --use-mlflow-sqlite
+    deps:
+    - path: experiment_store.py
+      hash: md5
+      md5: 3e540d2486ba1f2dd60477276f4cec1b
+      size: 5915
+    - path: mlsecops_guardrails.py
+      hash: md5
+      md5: 29baea4c980f42bdf416cfa5f6954fe3
+      size: 13696
+    - path: pipeline_utils.py
+      hash: md5
+      md5: 4455e1f317fc3761989fcea15a54a570
+      size: 2772
+    - path: regression_reporting.py
+      hash: md5
+      md5: 59e5e6bb821ebb5f6545802c83b07ca7
+      size: 6228
+    - path: retrain_pipeline.py
+      hash: md5
+      md5: c521361989cd2ecec3632c5469595d7e
+      size: 11289
+    - path: train_pipeline.py
+      hash: md5
+      md5: c988f2e740e0a0b2d294fc0d06427fc3
+      size: 10370
+    outs:
+    - path: .data/student-mat.csv
+      hash: md5
+      md5: 4dc304be95c60de6ee13fb8769469dd7
+      size: 56993
+    - path: experiments.db
+      hash: md5
+      md5: 2739c9be4040bb244fe6e4653daca8dd
+      size: 262144
+    - path: experiments.mlflow.db
+      hash: md5
+      md5: 602d71959958fc10f9034d5f0399830f
+      size: 450560
+    - path: mlruns
+      hash: md5
+      md5: bf255a6c89e6bed9a470ca578fd607ae.dir
+      size: 2349799
+      nfiles: 15

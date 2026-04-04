@@ -1,0 +1,27 @@
+# Python
+.venv/
+.venv-llm/
+__pycache__/
+*.pyc
+
+# MLflow / experiments
+mlruns/
+experiments.db*
+experiments.mlflow.db*
+
+# DVC local caches
+.dvc/cache/
+.dvc/tmp/
+
+# Data & outputs
+.data/
+fairness_reports/
+giskard_reports/
+llm_outputs/
+mlsecops_reports/
+
+# Logs & artifacts
+*.log
+*.jsonl
+cyclonedx_sbom.json
+credo_ai_manifest.json

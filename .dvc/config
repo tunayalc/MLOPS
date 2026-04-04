@@ -1,0 +1,2 @@
+[core]
+    # Configure your DVC remote locally (dvc remote add -d <name> <url>)
